@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
+
         body{
             font-family: "Roboto";
         }
@@ -51,15 +52,92 @@
         header .index_profile ul li input[type=button]{
             border: 0 solid black;
             border-radius: 25px;
-            background-color: lightgreen;
+            background-color: green;
             color: white;
             font-size: 20px;
             font-weight: bold;
-
             padding: 5px 25px; 
             width: auto; 
             height: auto; 
+            cursor: pointer;
         }
+
+        footer .Footer-main{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .message-box, .button-box, .image-box {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Message box styles */
+        .message-box {
+            padding: 45px;
+            width: 450px;
+            height: 423px;
+            margin-bottom: 20px;
+        }
+
+        /* Button box styles */
+        .button-box {
+            background-color: #04AA6D; /* Green */
+            border: none;
+            border-radius: 25px;
+            padding: 16px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            height: 25px;
+            width: 250px;
+            margin-left: 125px;
+        }
+
+        .button-box input{
+            background-color: #04AA6D; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 23px;
+            cursor: pointer;   
+            font-weight: bold;         
+        }
+
+        /* Image box styles */
+        .image-box {
+            width: 650px;
+            height: 550px;
+            padding: 20px;
+            margin-left: 40px; 
+        }
+
     </style>
 
 </head>
@@ -82,6 +160,37 @@
             </div>
 
         </div>
+
+        <div class="main-container">
+            <div class="left-content">
+                <!-- Message box -->
+                <div class="message-box">
+                    <p>This part will show the <strong>missions/services</strong> we're providing.<br><br>Could also tell a bit of our background and why we want to implement this</p>
+                    
+                </div>
+                
+                <!-- Button box -->
+                <div class="button-box">
+                    <input type="button" id="get-start" value="Get Started!">
+                </div>
+            </div>
+        
+            <!-- Image box -->
+            <div class="image-box">
+                <p>This part will be replaced with actual image if we have a in the feature</p>
+            </div>
+        </div>
+        
+
+
+        <footer>
+            <div class="Footer-main">
+
+                <a href="#">About Us</a>
+    
+            </div>
+        </footer>
+
         
     </header>
 </body>
