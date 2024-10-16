@@ -49,7 +49,7 @@
             font-weight: bold;
         }
 
-        header .index_profile ul li input[type=button]{
+        header .index_profile ul li input[type=submit]{
             border: 0 solid black;
             border-radius: 25px;
             background-color: green;
@@ -155,7 +155,10 @@
             <div class="index_profile">
                 <ul>
                     <li><span id="sign_in">SIGN IN</span></li>
-                    <li><input type="button" value="New User" id="register"></li>
+                    <form method="GET" action="/register">
+                        <li><input type="submit" value="New User" id="register"></li>
+                    </form>
+                    
                 </ul>
             </div>
 
@@ -171,7 +174,9 @@
                 
                 <!-- Button box -->
                 <div class="button-box">
-                    <input type="button" id="get-start" value="Get Started!">
+                    <form method="GET" action="/register">
+                        <input type="submit" id="get-start" value="Get Started!">
+                    </form>
                 </div>
             </div>
         
